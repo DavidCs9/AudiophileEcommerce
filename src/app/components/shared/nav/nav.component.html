@@ -1,52 +1,93 @@
-<nav class="bg-dark text-gray-50 pt-8 px-32">
-  <ul class="flex justify-between pb-8 border-b border-b-gray-700">
-    <h3 class="font-bold text-2xl">audiophile</h3>
-    <div class="flex gap-4">
-      <li>
-        <a
-          class="cursor-pointer hover:text-gray-400"
-          routerLink="/home"
-          routerLinkActive="active"
-          >Home</a
+<nav class="bg-dark text-gray-50 lg:px-32">
+  <div
+    class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+  >
+    <a
+      routerLink="/home"
+      class="flex items-center space-x-3 rtl:space-x-reverse"
+    >
+      <h3 class="font-bold text-2xl">audiophile</h3>
+    </a>
+    <div
+      class="flex place-items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+    >
+      <a class="fill-white hover:fill-gray-400 cursor-pointer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="16"
+          width="18"
+          viewBox="0 0 576 512"
         >
-      </li>
-      <li>
-        <a
-          class="cursor-pointer hover:text-gray-400"
-          routerLink="/headphones"
-          routerLinkActive="active"
-          >Headphones</a
-        >
-      </li>
-      <li>
-        <a
-          class="cursor-pointer hover:text-gray-400"
-          routerLink="/speakers"
-          routerLinkActive="active"
-          >Speakers</a
-        >
-      </li>
-      <li>
-        <a
-          class="cursor-pointer hover:text-gray-400"
-          routerLink="/earphones"
-          routerLinkActive="active"
-          >Earphones</a
-        >
-      </li>
-    </div>
-    <button class="fill-white hover:fill-gray-400 cursor-pointer">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="16"
-        width="18"
-        viewBox="0 0 576 512"
+          <path
+            d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+          />
+        </svg>
+      </a>
+      <button
+        data-collapse-toggle="navbar-cta"
+        type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-cta"
+        aria-expanded="false"
       >
-        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
-        <path
-          d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
-        />
-      </svg>
-    </button>
-  </ul>
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+      id="navbar-cta"
+    >
+      <ul
+        class="flex flex-col md:flex-row gap-4 bg-black md:bg-transparent p-10 absolute md:relative right-3 z-10 md:z-0 rounded text-3xl md:text-base"
+      >
+        <li>
+          <a
+            class="cursor-pointer hover:text-gray-400"
+            routerLink="/home"
+            routerLinkActive="active"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            class="cursor-pointer hover:text-gray-400"
+            routerLink="/headphones"
+            routerLinkActive="active"
+            >Headphones</a
+          >
+        </li>
+        <li>
+          <a
+            class="cursor-pointer hover:text-gray-400"
+            routerLink="/speakers"
+            routerLinkActive="active"
+            >Speakers</a
+          >
+        </li>
+        <li>
+          <a
+            class="cursor-pointer hover:text-gray-400"
+            routerLink="/earphones"
+            routerLinkActive="active"
+            >Earphones</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>

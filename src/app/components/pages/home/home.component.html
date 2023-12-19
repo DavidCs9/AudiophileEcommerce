@@ -1,41 +1,59 @@
 <!-- hero -->
 <section
-  class="grid grid-cols-2 px-32 bg-dark text-gray-100 place-items-center"
+  class="grid grid-cols-1 md:grid-cols-2 md:px-32 bg-dark text-gray-100 place-items-center"
 >
-  <div class="flex flex-col gap-3 animation">
-    <h2 class="text-gray-500">NEW PRODUCT</h2>
-    <h1 class="text-6xl font-bold">XX99 Mark II Headphones</h1>
-    <p class="text-gray-400 mt-2">
+  <div
+    class="grid place-items-center md:flex md:flex-col gap-9 md:gap-3 absolute md:relative w-full p-16"
+  >
+    <h2
+      class="text-gray-500 w-full text-center md:text-left text-xl md:text-base"
+    >
+      NEW PRODUCT
+    </h2>
+    <h1 class="text-6xl font-bold text-center md:text-left">
+      XX99 Mark II Headphones
+    </h1>
+    <p
+      class="text-gray-400 mt-2 text-center md:text-left text-2xl md:text-base"
+    >
       Experience natural, lifelike audio and exceptional build quality made for
       the passionate music enthusiast.
     </p>
-    <button class="bg-orange w-40 py-2 rounded-sm hover:bg-orange/80">
+    <button
+      class="bg-orange text-2xl md:text-base px-8 md:w-full py-2 rounded-sm hover:bg-orange/80"
+    >
       SEE PRODUCT
     </button>
   </div>
-  <div class="animation">
-    <img src="../../../../assets/images/image-hero.png" alt="hero-img" />
-  </div>
+  <img
+    src="../../../../assets/images/image-hero.png"
+    alt="hero-img"
+    class="h-[800px] object-cover md:object-contain md:h-auto"
+  />
 </section>
 <!-- category -->
 <app-categories />
 <!-- product -->
-<section class="px-32 mb-12 flex flex-col gap-10">
+<section class="px-10 md:px-32 mb-12 flex flex-col gap-10">
   <!-- product 1 -->
-  <div class="bg-orange rounded relative h-[500px] overflow-hidden">
+  <div
+    class="bg-orange rounded relative h-[800px] md:h-[500px] overflow-hidden"
+  >
     <img src="../../../../assets/images/pattern-circles.svg" alt="fondo" />
     <img
       src="../../../../assets/images/image-speaker-zx9.png"
       alt="speaker-zx9"
-      class="w-72 absolute -bottom-2 left-20"
+      class="w-72 absolute -bottom-2 left-32 md:left-20"
     />
-    <div class="absolute top-40 right-52">
-      <h3 class="font-bold text-6xl text-white">ZX9 SPEAKER</h3>
-      <h5 class="text-white w-[300px] my-4">
+    <div class="absolute top-1/4 mx-7 md:top-40 md:right-52">
+      <h3 class="font-bold text-6xl text-white text-center md:text-left">
+        ZX9 SPEAKER
+      </h3>
+      <h5 class="text-white md:w-[300px] my-4 text-center">
         Upgrade to premium speakers that are phenomenally built to deliver truly
         remarkable sound.
       </h5>
-      <button class="bg-black text-white text-sm px-7 py-3 rounded-sm">
+      <button class="bg-black text-white text-sm w-full py-3 rounded-sm">
         SEE PRODUCT
       </button>
     </div>
@@ -57,7 +75,7 @@
     </div>
   </div>
   <!-- product 3 -->
-  <div class="grid grid-cols-2 gap-8">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
     <div class="rounded relative h-[300px] overflow-hidden">
       <img
         src="../../../../assets/images/image-earphones-yx1.jpg"
@@ -81,4 +99,3 @@
 </section>
 <!-- about -->
 <app-about />
-```
